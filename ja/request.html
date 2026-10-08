@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ・お見積り — Voilà chef</title>
+<meta name="description" content="ご希望の日時、場所、人数、ご用途をお知らせください。メニュー、シェフ、お見積りを含めたご提案をお返しします。">
+<link rel="canonical" href="https://voila-chef.vercel.app/ja/request"><link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja/request"><link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en/request"><link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr/demande"><link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja/request">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voilà chef">
+<meta property="og:title" content="お問い合わせ・お見積り — Voilà chef">
+<meta property="og:description" content="ご希望の日時、場所、人数、ご用途をお知らせください。メニュー、シェフ、お見積りを含めたご提案をお返しします。">
+<meta property="og:url" content="https://voila-chef.vercel.app/ja/request">
+<meta property="og:image" content="https://voila-chef.vercel.app/assets/img/hero-1400.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#141311">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="/assets/css/style.css?v=202610081320"></head>
+<body class="lang-ja">
+<a class="skip" href="#main">本文へ</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a class="brand" href="/ja">Voilà <em>chef</em></a>
+    <nav class="nav__menu" id="menu" aria-label="Menu">
+      <a href="/ja#chefs">シェフ</a>
+      <a href="/ja#tables">三つのテーブル</a>
+      <a href="/ja#occasions">ご用途</a>
+      <a href="/ja#domicile">出張シェフ</a>
+      <a href="/ja#aperitif">アペリティフ</a>
+      <a href="/ja#cave">ワインと食材</a>
+      <a href="/ja#destinations">対応エリア</a>
+      <a class="nav__menu-cta" href="/ja/request">お問い合わせ</a>
+      <div class="nav__langs nav__langs--menu">        <a href="/ja/request" hreflang="ja" aria-current="true">JA</a>        <a href="/en/request" hreflang="en">EN</a>        <a href="/fr/demande" hreflang="fr">FR</a>      </div>
+    </nav>
+    <div class="nav__right">
+      <div class="nav__langs">        <a href="/ja/request" hreflang="ja" aria-current="true">JA</a>        <a href="/en/request" hreflang="en">EN</a>        <a href="/fr/demande" hreflang="fr">FR</a>      </div>
+      <a class="btn btn--line" href="/ja/request">お問い合わせ</a>
+      <button class="burger" type="button" aria-controls="menu" aria-expanded="false" aria-label="メニューを開く" data-open="メニューを開く" data-close="メニューを閉じる">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <p class="kicker kicker--accent">お問い合わせ</p>
+    <h1 class="h1 h1--page">イベントの <em>ご相談。</em></h1>
+    <p class="lead">数行で十分です。Kazu、Yuichiro、またはその両方。メニュー、シェフ、お見積りを含めたご提案をお返しします。</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap g2 g2--start g2--wide">
+
+    <form class="form" id="demande-form" action="/api/demande" method="post" novalidate
+          data-sending="送信中…" data-subject="Voilà chef お問い合わせ" data-email="contact-voilaJP@proton.me">
+      <input type="hidden" name="lang" value="ja">
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <fieldset>
+        <legend class="h3">イベントについて</legend>
+        <div class="form__grid">
+          <div class="field">
+            <label for="occasion">ご用途</label>
+            <select id="occasion" name="occasion"><option>お誕生日</option><option>ご婚約</option><option>ご結婚式</option><option>結婚記念日</option><option>法人・セミナー</option><option>Voilà les enfants のイベント</option><option>ご友人・ご家族との食事</option><option>その他</option></select>
+          </div>
+          <div class="field">
+            <label for="formule">形式</label>
+            <select id="formule" name="formule"><option>アペリティフ</option><option>ディナー</option><option>アペリティフ＋ディナー</option><option>ご自宅への出張シェフ</option></select>
+          </div>
+          <div class="field">
+            <label for="date">ご希望日</label>
+            <input id="date" name="date" type="text" placeholder="2026 / 12 / 24" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="time">時間</label>
+            <input id="time" name="time" type="text" placeholder="19:00" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="guests">人数</label>
+            <input id="guests" name="guests" type="text" inputmode="numeric" placeholder="12">
+          </div>
+          <div class="field">
+            <label for="place">場所</label>
+            <input id="place" name="place" type="text" placeholder="市区町村 — ご自宅または会場">
+          </div>
+          <div class="field">
+            <label for="table">ご希望のテーブル</label>
+            <select id="table" name="table"><option>四手のテーブル — Kazu &amp; Yuichiro</option><option>フランスのテーブル — Kazu</option><option>日本のテーブル — Yuichiro</option><option>まだ決めていない</option></select>
+          </div>
+          <div class="field">
+            <label for="budget">ご予算の目安 <span class="opt">（任意）</span></label>
+            <input id="budget" name="budget" type="text" placeholder="お一人あたり、または全体で（円）">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="h3">お客様について</legend>
+        <div class="form__grid">
+          <div class="field">
+            <label for="name">お名前</label>
+            <input id="name" name="name" type="text" placeholder="姓 名" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="language">ご希望の言語</label>
+            <select id="language" name="language"><option selected>日本語</option><option>English</option><option>Français</option></select>
+          </div>
+          <div class="field">
+            <label for="email">メールアドレス</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">電話番号 <span class="opt">（任意）</span></label>
+            <input id="phone" name="phone" type="tel" placeholder="090-" autocomplete="tel">
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">イベントについて、ひとこと</label>
+          <textarea id="message" name="message" rows="4" placeholder="アレルギー、ご希望、雰囲気、会場の条件など"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="form__actions">
+        <button class="btn btn--solid btn--lg" type="submit">送信する</button>
+        <p class="small small--muted">ご入力いただいた情報は、ご提案の作成とご返信のみに使用します。お見積りにご署名いただくまで、契約は発生しません。</p>
+      </div>
+
+      <div class="form__status" id="form-status" role="status" aria-live="polite" hidden>
+        <div class="form__success" hidden>
+          <p class="h3">ありがとうございます。</p>
+          <p class="body body--muted">お問い合わせを受け付けました。48時間以内に、最初のご提案をお送りします。</p>
+        </div>
+        <div class="form__error" hidden>
+          <p class="body body--muted">送信できませんでした。直接メールでお問い合わせください：</p>
+          <a class="btn btn--line" id="form-mailto" href="mailto:contact-voilaJP@proton.me">メールで送る</a>
+        </div>
+      </div>
+    </form>
+
+    <aside class="aside">
+      <p class="kicker kicker--accent">ご依頼の流れ</p>
+      <ol class="steps">        <li>
+          <span class="num">I</span>
+          <div><h3 class="h3 h3--sm">お問い合わせ</h3><p class="card__text">ご用途、日時、場所、人数。詳細を伺うため、こちらからご連絡します。</p></div>
+        </li>        <li>
+          <span class="num">II</span>
+          <div><h3 class="h3 h3--sm">ご提案</h3><p class="card__text">お客様のためのメニュー、シェフ（一人または二人）、ワインリスト、お見積り。</p></div>
+        </li>        <li>
+          <span class="num">III</span>
+          <div><h3 class="h3 h3--sm">当日</h3><p class="card__text">食材を携えて伺い、調理し、食卓を整え、サービスします。あなたは、もてなすだけ。</p></div>
+        </li>      </ol>
+      <div class="contact-box">
+        <p class="label">直接のお問い合わせ</p>
+        <a href="mailto:contact-voilaJP@proton.me">contact-voilaJP@proton.me</a>
+        <a href="https://lin.ee/PXNYpdO" rel="noopener" target="_blank">LINE — Voilà</a>
+        <p class="small small--muted contact-box__zone">京都 — 日本全国、バリ、フランスへ伺います。</p>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="brand brand--footer">Voilà <em>chef</em></div>
+        <p class="footer__muted">Voilà のブランド<br>京都</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="/ja#tables">三つのテーブル</a>
+        <a href="/ja#occasions">ご用途</a>
+        <a href="/ja#domicile">出張シェフ</a>
+        <a href="/ja#cave">ワインと食材</a>
+      </nav>
+      <nav class="footer__links" aria-label="Footer 2">
+        <a href="/ja#chefs">シェフ</a>
+        <a href="/ja#destinations">対応エリア</a>
+        <a href="/ja/request">お問い合わせ</a>
+        <a href="https://lin.ee/PXNYpdO" rel="noopener" target="_blank">LINE</a>
+      </nav>
+      <div class="footer__links">
+        <a class="footer__ext" href="https://voila-les-enfants.vercel.app" rel="noopener" target="_blank">Voilà les enfants — スクール
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+        <a href="mailto:contact-voilaJP@proton.me">contact-voilaJP@proton.me</a>
+        <span class="footer__muted">JA · EN · FR</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Voilà chef</span>
+      <a href="/ja/legal">特定商取引法に基づく表記</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js?v=202610081320" defer></script>
+</body>
+</html>

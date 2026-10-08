@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block main %}
+
+<section class="page-head">
+  <div class="wrap">
+    <p class="kicker kicker--accent">{{ t.legal.kicker }}</p>
+    <h1 class="h1 h1--page">{{ t.legal.title }}</h1>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap legal">
+    {%- for s in t.legal.sections %}
+    <div class="legal__block">
+      <h2 class="h3">{{ s.h }}</h2>
+      {%- for p in s.p %}
+      <p class="body body--muted">{{ p }}</p>
+      {%- endfor %}
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+{% endblock %}

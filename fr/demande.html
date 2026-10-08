@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Composer votre événement — Voilà chef</title>
+<meta name="description" content="Dites-nous l&#39;occasion, la date, le lieu et le nombre de convives. Nous revenons vers vous avec une proposition sur mesure : menu, chef(s) et devis.">
+<link rel="canonical" href="https://voila-chef.vercel.app/fr/demande"><link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja/request"><link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en/request"><link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr/demande"><link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja/request">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voilà chef">
+<meta property="og:title" content="Composer votre événement — Voilà chef">
+<meta property="og:description" content="Dites-nous l&#39;occasion, la date, le lieu et le nombre de convives. Nous revenons vers vous avec une proposition sur mesure : menu, chef(s) et devis.">
+<meta property="og:url" content="https://voila-chef.vercel.app/fr/demande">
+<meta property="og:image" content="https://voila-chef.vercel.app/assets/img/hero-1400.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#141311">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="/assets/css/style.css?v=202610081320"></head>
+<body class="lang-fr">
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a class="brand" href="/fr">Voilà <em>chef</em></a>
+    <nav class="nav__menu" id="menu" aria-label="Menu">
+      <a href="/fr#chefs">Les chefs</a>
+      <a href="/fr#tables">Les tables</a>
+      <a href="/fr#occasions">Occasions</a>
+      <a href="/fr#domicile">À domicile</a>
+      <a href="/fr#aperitif">Apéritif</a>
+      <a href="/fr#cave">Cave</a>
+      <a href="/fr#destinations">Destinations</a>
+      <a class="nav__menu-cta" href="/fr/demande">Demande</a>
+      <div class="nav__langs nav__langs--menu">        <a href="/ja/request" hreflang="ja">JA</a>        <a href="/en/request" hreflang="en">EN</a>        <a href="/fr/demande" hreflang="fr" aria-current="true">FR</a>      </div>
+    </nav>
+    <div class="nav__right">
+      <div class="nav__langs">        <a href="/ja/request" hreflang="ja">JA</a>        <a href="/en/request" hreflang="en">EN</a>        <a href="/fr/demande" hreflang="fr" aria-current="true">FR</a>      </div>
+      <a class="btn btn--line" href="/fr/demande">Demande</a>
+      <button class="burger" type="button" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu" data-open="Ouvrir le menu" data-close="Fermer le menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <p class="kicker kicker--accent">Demande</p>
+    <h1 class="h1 h1--page">Composer votre <em>événement.</em></h1>
+    <p class="lead">Quelques lignes suffisent. Kazu, Yuichiro ou les deux : nous revenons vers vous avec une proposition sur mesure — menu, chef(s) et devis.</p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap g2 g2--start g2--wide">
+
+    <form class="form" id="demande-form" action="/api/demande" method="post" novalidate
+          data-sending="Envoi…" data-subject="Demande Voilà chef" data-email="contact-voilaJP@proton.me">
+      <input type="hidden" name="lang" value="fr">
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <fieldset>
+        <legend class="h3">L&#39;événement</legend>
+        <div class="form__grid">
+          <div class="field">
+            <label for="occasion">Occasion</label>
+            <select id="occasion" name="occasion"><option>Anniversaire</option><option>Fiançailles</option><option>Mariage</option><option>Noces</option><option>Entreprise · séminaire</option><option>Événement Voilà les enfants</option><option>Dîner entre amis · famille</option><option>Autre</option></select>
+          </div>
+          <div class="field">
+            <label for="formule">Formule</label>
+            <select id="formule" name="formule"><option>Apéritif</option><option>Dîner</option><option>Apéritif + dîner</option><option>Chef privé à domicile</option></select>
+          </div>
+          <div class="field">
+            <label for="date">Date souhaitée</label>
+            <input id="date" name="date" type="text" placeholder="JJ / MM / AAAA" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="time">Heure</label>
+            <input id="time" name="time" type="text" placeholder="19:00" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="guests">Nombre de convives</label>
+            <input id="guests" name="guests" type="text" inputmode="numeric" placeholder="12">
+          </div>
+          <div class="field">
+            <label for="place">Lieu</label>
+            <input id="place" name="place" type="text" placeholder="Ville, pays — domicile ou salle">
+          </div>
+          <div class="field">
+            <label for="table">Table souhaitée</label>
+            <select id="table" name="table"><option>À quatre mains — Kazu &amp; Yuichiro</option><option>La Table française — Kazu</option><option>La Table japonaise — Yuichiro</option><option>Je ne sais pas encore</option></select>
+          </div>
+          <div class="field">
+            <label for="budget">Budget indicatif <span class="opt">(facultatif)</span></label>
+            <input id="budget" name="budget" type="text" placeholder="¥ par personne ou enveloppe globale">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="h3">Vous</legend>
+        <div class="form__grid">
+          <div class="field">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" placeholder="Prénom Nom" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="language">Langue préférée</label>
+            <select id="language" name="language"><option>日本語</option><option>English</option><option selected>Français</option></select>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="vous@exemple.com" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Téléphone <span class="opt">(facultatif)</span></label>
+            <input id="phone" name="phone" type="tel" placeholder="+81" autocomplete="tel">
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Votre événement en quelques mots</label>
+          <textarea id="message" name="message" rows="4" placeholder="Allergies, envies particulières, ambiance, contraintes du lieu…"></textarea>
+        </div>
+      </fieldset>
+
+      <div class="form__actions">
+        <button class="btn btn--solid btn--lg" type="submit">Envoyer la demande</button>
+        <p class="small small--muted">Vos informations ne servent qu&#39;à préparer notre proposition. Aucun engagement avant le devis signé.</p>
+      </div>
+
+      <div class="form__status" id="form-status" role="status" aria-live="polite" hidden>
+        <div class="form__success" hidden>
+          <p class="h3">Merci.</p>
+          <p class="body body--muted">Votre demande est bien arrivée. Nous revenons vers vous sous 48 heures avec une première proposition.</p>
+        </div>
+        <div class="form__error" hidden>
+          <p class="body body--muted">L&#39;envoi n&#39;a pas abouti. Vous pouvez nous écrire directement :</p>
+          <a class="btn btn--line" id="form-mailto" href="mailto:contact-voilaJP@proton.me">Envoyer par e-mail</a>
+        </div>
+      </div>
+    </form>
+
+    <aside class="aside">
+      <p class="kicker kicker--accent">Comment cela se passe</p>
+      <ol class="steps">        <li>
+          <span class="num">I</span>
+          <div><h3 class="h3 h3--sm">Votre demande</h3><p class="card__text">L&#39;occasion, la date, le lieu, les convives. Nous vous rappelons pour affiner.</p></div>
+        </li>        <li>
+          <span class="num">II</span>
+          <div><h3 class="h3 h3--sm">Notre proposition</h3><p class="card__text">Un menu composé pour vous, le chef ou les deux chefs, la carte des vins et le devis.</p></div>
+        </li>        <li>
+          <span class="num">III</span>
+          <div><h3 class="h3 h3--sm">Votre table</h3><p class="card__text">Nous arrivons avec les produits, cuisinons, dressons et servons. Vous recevez.</p></div>
+        </li>      </ol>
+      <div class="contact-box">
+        <p class="label">Nous écrire directement</p>
+        <a href="mailto:contact-voilaJP@proton.me">contact-voilaJP@proton.me</a>
+        <a href="https://lin.ee/PXNYpdO" rel="noopener" target="_blank">LINE — Voilà</a>
+        <p class="small small--muted contact-box__zone">Kyoto, Japon — nous opérons partout au Japon, à Bali et en France.</p>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="brand brand--footer">Voilà <em>chef</em></div>
+        <p class="footer__muted">Une maison Voilà<br>Kyoto, Japon</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="/fr#tables">Les tables</a>
+        <a href="/fr#occasions">Occasions</a>
+        <a href="/fr#domicile">À domicile</a>
+        <a href="/fr#cave">Cave</a>
+      </nav>
+      <nav class="footer__links" aria-label="Footer 2">
+        <a href="/fr#chefs">Les chefs</a>
+        <a href="/fr#destinations">Destinations</a>
+        <a href="/fr/demande">Demande</a>
+        <a href="https://lin.ee/PXNYpdO" rel="noopener" target="_blank">LINE</a>
+      </nav>
+      <div class="footer__links">
+        <a class="footer__ext" href="https://voila-les-enfants.vercel.app" rel="noopener" target="_blank">Voilà les enfants — l&#39;école
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+        <a href="mailto:contact-voilaJP@proton.me">contact-voilaJP@proton.me</a>
+        <span class="footer__muted">JA · EN · FR</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Voilà chef</span>
+      <a href="/fr/mentions-legales">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js?v=202610081320" defer></script>
+</body>
+</html>

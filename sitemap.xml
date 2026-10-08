@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://voila-chef.vercel.app/ja</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://voila-chef.vercel.app/ja/request</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja/request"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en/request"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr/demande"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja/request"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://voila-chef.vercel.app/ja/legal</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja/legal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en/legal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja/legal"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://voila-chef.vercel.app/en</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://voila-chef.vercel.app/en/request</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja/request"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en/request"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr/demande"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja/request"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://voila-chef.vercel.app/en/legal</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja/legal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en/legal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja/legal"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://voila-chef.vercel.app/fr</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://voila-chef.vercel.app/fr/demande</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja/request"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en/request"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr/demande"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja/request"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://voila-chef.vercel.app/fr/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://voila-chef.vercel.app/ja/legal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voila-chef.vercel.app/en/legal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://voila-chef.vercel.app/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://voila-chef.vercel.app/ja/legal"/>
+    <priority>0.6</priority>
+  </url>
+</urlset>

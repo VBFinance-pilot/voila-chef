@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://voila-chef.vercel.app/sitemap.xml

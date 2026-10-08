@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="{{ t.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_desc }}">
+<link rel="canonical" href="{{ site.base_url }}{{ url_for(t.lang, page) }}">
+{%- for l in site.langs %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ site.base_url }}{{ url_for(l, page) }}">
+{%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.base_url }}{{ url_for(site.default_lang, page) }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_desc }}">
+<meta property="og:url" content="{{ site.base_url }}{{ url_for(t.lang, page) }}">
+<meta property="og:image" content="{{ site.base_url }}{{ site.og_image }}">
+<meta property="og:locale" content="{{ {'ja':'ja_JP','en':'en_US','fr':'fr_FR'}[t.lang] }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#141311">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="/assets/css/style.css?v={{ build_id }}">
+{%- if page == 'index' %}
+<link rel="preload" as="image" href="/assets/img/hero-1400.webp" imagesrcset="/assets/img/hero-800.webp 800w, /assets/img/hero-1400.webp 1400w, /assets/img/hero-2000.webp 2000w" imagesizes="(max-width: 760px) 100vw, 50vw">
+{%- endif %}
+{%- block head %}{% endblock %}
+{%- if site.ga_id %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_id }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','{{ site.ga_id }}',{anonymize_ip:true});</script>
+{%- endif %}
+</head>
+<body class="lang-{{ t.lang }}">
+<a class="skip" href="#main">{{ {'ja':'本文へ','en':'Skip to content','fr':'Aller au contenu'}[t.lang] }}</a>
+
+<header class="nav" id="top">
+  <div class="wrap nav__in">
+    <a class="brand" href="{{ url_for(t.lang, 'index') }}">Voilà <em>chef</em></a>
+    <nav class="nav__menu" id="menu" aria-label="Menu">
+      <a href="{{ url_for(t.lang, 'index') }}#chefs">{{ t.nav.chefs }}</a>
+      <a href="{{ url_for(t.lang, 'index') }}#tables">{{ t.nav.tables }}</a>
+      <a href="{{ url_for(t.lang, 'index') }}#occasions">{{ t.nav.occasions }}</a>
+      <a href="{{ url_for(t.lang, 'index') }}#domicile">{{ t.nav.domicile }}</a>
+      <a href="{{ url_for(t.lang, 'index') }}#aperitif">{{ t.nav.aperitif }}</a>
+      <a href="{{ url_for(t.lang, 'index') }}#cave">{{ t.nav.cave }}</a>
+      <a href="{{ url_for(t.lang, 'index') }}#destinations">{{ t.nav.destinations }}</a>
+      <a class="nav__menu-cta" href="{{ url_for(t.lang, 'demande') }}">{{ t.nav.demande }}</a>
+      <div class="nav__langs nav__langs--menu">
+        {%- for l in site.langs %}
+        <a href="{{ url_for(l, page) }}" hreflang="{{ l }}"{% if l == t.lang %} aria-current="true"{% endif %}>{{ l|upper }}</a>
+        {%- endfor %}
+      </div>
+    </nav>
+    <div class="nav__right">
+      <div class="nav__langs">
+        {%- for l in site.langs %}
+        <a href="{{ url_for(l, page) }}" hreflang="{{ l }}"{% if l == t.lang %} aria-current="true"{% endif %}>{{ l|upper }}</a>
+        {%- endfor %}
+      </div>
+      <a class="btn btn--line" href="{{ url_for(t.lang, 'demande') }}">{{ t.nav.demande }}</a>
+      <button class="burger" type="button" aria-controls="menu" aria-expanded="false" aria-label="{{ t.nav.menu_open }}" data-open="{{ t.nav.menu_open }}" data-close="{{ t.nav.menu_close }}">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{%- block main %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <div class="brand brand--footer">Voilà <em>chef</em></div>
+        <p class="footer__muted">{{ t.footer.house }}<br>{{ t.footer.city }}</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="{{ url_for(t.lang, 'index') }}#tables">{{ t.nav.tables }}</a>
+        <a href="{{ url_for(t.lang, 'index') }}#occasions">{{ t.nav.occasions }}</a>
+        <a href="{{ url_for(t.lang, 'index') }}#domicile">{{ t.nav.domicile }}</a>
+        <a href="{{ url_for(t.lang, 'index') }}#cave">{{ t.nav.cave }}</a>
+      </nav>
+      <nav class="footer__links" aria-label="Footer 2">
+        <a href="{{ url_for(t.lang, 'index') }}#chefs">{{ t.nav.chefs }}</a>
+        <a href="{{ url_for(t.lang, 'index') }}#destinations">{{ t.nav.destinations }}</a>
+        <a href="{{ url_for(t.lang, 'demande') }}">{{ t.nav.demande }}</a>
+        <a href="{{ site.line_url }}" rel="noopener" target="_blank">LINE</a>
+      </nav>
+      <div class="footer__links">
+        <a class="footer__ext" href="{{ site.school_url }}" rel="noopener" target="_blank">{{ t.footer.school }}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M2 10L10 2M4 2h6v6"/></svg></a>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <span class="footer__muted">{{ site.langs|map('upper')|join(' · ') }}</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>{{ t.footer.copyright }}</span>
+      <a href="{{ url_for(t.lang, 'legal') }}">{{ t.footer.legal }}</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js?v={{ build_id }}" defer></script>
+</body>
+</html>

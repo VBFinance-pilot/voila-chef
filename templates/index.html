@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% block head %}
+<script type="application/ld+json">
+{{ jsonld|tojson }}
+</script>
+{% endblock %}
+{% block main %}
+
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="kicker kicker--accent">{{ t.hero.kicker }}</p>
+      <h1 class="h1">{{ t.hero.title_1 }}<br><em>{{ t.hero.title_2 }}</em></h1>
+      <p class="lead">{{ t.hero.text }}</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="{{ url_for(t.lang, 'demande') }}">{{ t.hero.cta }}</a>
+        <a class="link-arrow" href="#tables">{{ t.hero.link }}
+          <svg width="22" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M0 5h20M16 1l4 4-4 4"/></svg></a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <div class="hero__frame" aria-hidden="true"></div>
+      {{ picture('hero', t.hero.img_alt, '(max-width: 760px) 100vw, 50vw', eager=True) }}
+    </div>
+  </div>
+</section>
+
+<div class="wrap rule-line">
+  <span class="rule"></span>
+  <p class="jp">{{ t.jp_line }}</p>
+  <span class="rule"></span>
+</div>
+
+<section class="section section--ivory" id="concept">
+  <div class="wrap">
+    <div class="g2 g2--start">
+      <div>
+        <p class="kicker kicker--dark">{{ t.concept.kicker }}</p>
+        <h2 class="h2">{{ t.concept.title }}</h2>
+      </div>
+      <div class="concept__text">
+        <p>{{ t.concept.p1 }}</p>
+        <p>{{ t.concept.p2 }}</p>
+      </div>
+    </div>
+    <div class="stats">
+      {%- for s in t.concept.stats %}
+      <div class="stat"><div class="stat__n">{{ s.n }}</div><div class="stat__t">{{ s.t }}</div></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tables">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="kicker kicker--accent">{{ t.tables.kicker }}</p>
+      <h2 class="h2 h2--xl">{{ t.tables.title_1 }} <em>{{ t.tables.title_2 }}</em></h2>
+    </div>
+    <div class="g3">
+      {%- for it in t.tables["items"] %}
+      <article class="card{% if it.signature %} card--signature{% endif %}">
+        <div class="card__top"><span class="num">{{ it.num }}</span>{% if it.signature %}<span class="tag">{{ t.tables.signature }}</span>{% endif %}</div>
+        <h3 class="h3">{{ it.name }}</h3>
+        <p class="card__text">{{ it.text }}</p>
+        <div class="card__foot">
+          <span class="label">{{ it.chef }}</span>
+          <span class="price">{{ t.tables.price }}</span>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--ivory" id="domicile">
+  <div class="wrap g2 g2--center">
+    {{ picture('domicile', t.domicile.img_alt, '(max-width: 760px) 100vw, 50vw', cls='img img--tall') }}
+    <div>
+      <p class="kicker kicker--dark">{{ t.domicile.kicker }}</p>
+      <h2 class="h2 h2--xl">{{ t.domicile.title }}</h2>
+      <p class="body">{{ t.domicile.text }}</p>
+      <ul class="dashlist">
+        {%- for b in t.domicile.bullets %}
+        <li><span>—</span>{{ b }}</li>
+        {%- endfor %}
+      </ul>
+      <a class="link-arrow link-arrow--dark" href="{{ url_for(t.lang, 'demande') }}">{{ t.domicile.cta }}
+        <svg width="22" height="10" viewBox="0 0 22 10" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M0 5h20M16 1l4 4-4 4"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="occasions">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="kicker kicker--accent">{{ t.occasions.kicker }}</p>
+      <h2 class="h2 h2--xl">{{ t.occasions.title }}</h2>
+    </div>
+    <ul class="occasions">
+      {%- for o in t.occasions["items"] %}
+      <li><span class="num num--sm">{{ '%02d' % loop.index }}</span><span class="occasions__name">{{ o }}</span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="aperitif">
+  {{ picture('apero', t.aperitif.img_alt, '100vw', cls='band__img') }}
+  <div class="band__veil" aria-hidden="true"></div>
+  <div class="wrap band__text">
+    <p class="kicker">{{ t.aperitif.kicker }}</p>
+    <h2 class="h2 h2--xl">{{ t.aperitif.title_1 }} <em>{{ t.aperitif.title_2 }}</em></h2>
+    <p class="body body--light">{{ t.aperitif.text }}</p>
+  </div>
+</section>
+
+<section class="section section--ivory" id="cave">
+  <div class="wrap">
+    <div class="g2 g2--center">
+      <div>
+        <p class="kicker kicker--dark">{{ t.cave.kicker }}</p>
+        <h2 class="h2 h2--xl">{{ t.cave.title_1 }} <em>{{ t.cave.title_2 }}</em></h2>
+        <p class="body">{{ t.cave.text }}</p>
+      </div>
+      {{ picture('cave', t.cave.img_alt, '(max-width: 760px) 100vw, 50vw', cls='img img--mid') }}
+    </div>
+    <div class="g4 g4--rule">
+      {%- for c in t.cave["items"] %}
+      <div><h3 class="h3 h3--sm">{{ c.name }}</h3><p class="small">{{ c.text }}</p></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="chefs">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="kicker kicker--accent">{{ t.chefs.kicker }}</p>
+      <h2 class="h2 h2--xl">{{ t.chefs.title_1 }} <em>{{ t.chefs.title_2 }}</em></h2>
+      <p class="body body--muted">{{ t.chefs.text }}</p>
+    </div>
+    <div class="g2">
+      {%- for c in t.chefs["items"] %}
+      <article class="chef">
+        {{ picture(c.img, c.img_alt, '(max-width: 760px) 100vw, 50vw', cls='img img--portrait') }}
+        <p class="kicker kicker--accent">{{ c.cuisine }}</p>
+        <h3 class="h3">{{ c.name }}</h3>
+        <p class="card__text">{{ c.bio }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--stone section--center" id="destinations">
+  <div class="wrap">
+    <p class="kicker kicker--dark">{{ t.destinations.kicker }}</p>
+    <h2 class="h2 h2--xl">{{ t.destinations.title }}</h2>
+    <p class="body">{{ t.destinations.text }}</p>
+    <div class="cities">
+      <p class="label label--dark">{{ t.destinations.also }}</p>
+      <p class="cities__list">{% for c in t.destinations.cities %}<span>{{ c }}</span>{% if not loop.last %}<span class="dot">·</span>{% endif %}{% endfor %}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="demande">
+  <div class="wrap g2 g2--start">
+    <div>
+      <p class="kicker kicker--accent">{{ t.demande_block.kicker }}</p>
+      <h2 class="h2 h2--xl">{{ t.demande_block.title }}</h2>
+      <p class="body body--muted">{{ t.demande_block.text }}</p>
+      <a class="btn btn--solid" href="{{ url_for(t.lang, 'demande') }}">{{ t.demande_block.cta }}</a>
+    </div>
+    <div class="contact-box">
+      <p class="label">{{ t.demande_block.direct }}</p>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="{{ site.line_url }}" rel="noopener" target="_blank">{{ t.demande_block.line }}</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
