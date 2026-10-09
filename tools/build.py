@@ -19,8 +19,8 @@ IMG_WIDTHS = (800, 1400, 2000)
 IMAGES = {  # name -> (source file, crop box or None)
     'hero': ('hero-table.jpg', None),
     'domicile': ('hero-table.jpg', (0, 420, 1560, 1536)),
-    'chef-kazu': ('plat-francais.jpg', None),
-    'chef-yuichiro': ('plat-japonais.jpg', None),
+    'chef-kazu': ('chef-kazu.jpg', (40, 0, 859, 1024)),
+    'chef-yuichiro': ('chef-yuichiro.jpg', (690, 0, 1509, 1024)),
     'apero': ('apero.jpg', None),
     'cave': ('apero.jpg', (1380, 180, 2752, 1300)),
 }

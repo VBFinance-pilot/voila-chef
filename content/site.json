@@ -2,7 +2,11 @@
   "name": "Voilà chef",
   "base_url": "https://voila-chef.vercel.app",
   "default_lang": "ja",
-  "langs": ["ja", "en", "fr"],
+  "langs": [
+    "ja",
+    "en",
+    "fr"
+  ],
   "email": "contact-voilaJP@proton.me",
   "line_url": "https://lin.ee/PXNYpdO",
   "school_url": "https://voila-enfants.vercel.app",

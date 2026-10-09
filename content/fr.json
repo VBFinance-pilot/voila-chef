@@ -2,7 +2,11 @@
   "lang": "fr",
   "lang_label": "FR",
   "dir": "fr",
-  "pages": { "index": "", "demande": "demande", "legal": "mentions-legales" },
+  "pages": {
+    "index": "",
+    "demande": "demande",
+    "legal": "mentions-legales"
+  },
   "meta": {
     "index_title": "Voilà chef — Chefs privés à Kyoto · cuisine française, japonaise et à quatre mains",
     "index_desc": "Deux chefs, deux cuisines. Dîners privés, apéritifs et chef à domicile pour vos occasions : anniversaires, fiançailles, mariages, séminaires. Kyoto, Japon, Bali, France.",
@@ -12,9 +16,16 @@
     "legal_desc": "Mentions légales, informations sur l'opérateur et politique de confidentialité de Voilà chef."
   },
   "nav": {
-    "chefs": "Les chefs", "tables": "Les tables", "occasions": "Occasions", "domicile": "À domicile",
-    "aperitif": "Apéritif", "cave": "Cave", "destinations": "Destinations", "demande": "Demande",
-    "menu_open": "Ouvrir le menu", "menu_close": "Fermer le menu"
+    "chefs": "Les chefs",
+    "tables": "Les tables",
+    "occasions": "Occasions",
+    "domicile": "À domicile",
+    "aperitif": "Apéritif",
+    "cave": "Cave",
+    "destinations": "Destinations",
+    "demande": "Demande",
+    "menu_open": "Ouvrir le menu",
+    "menu_close": "Fermer le menu"
   },
   "hero": {
     "kicker": "Kyoto · Japon · Bali · France",
@@ -32,9 +43,18 @@
     "p1": "Voilà chef réunit Kazu et Yuichiro autour d'une même exigence : des produits d'exception, une carte courte et sûre, et le goût des occasions qui comptent.",
     "p2": "Chaque table est composée sur mesure — pour un dîner entre amis, une fête de famille, un mariage ou un séminaire. Cuisine française, cuisine japonaise, ou les deux à la même table.",
     "stats": [
-      { "n": "02", "t": "chefs — une cuisine française, une cuisine japonaise" },
-      { "n": "03", "t": "tables — française, japonaise, à quatre mains" },
-      { "n": "Sur devis", "t": "chaque événement composé sur mesure, du menu au service" }
+      {
+        "n": "02",
+        "t": "chefs — une cuisine française, une cuisine japonaise"
+      },
+      {
+        "n": "03",
+        "t": "tables — française, japonaise, à quatre mains"
+      },
+      {
+        "n": "Sur devis",
+        "t": "chaque événement composé sur mesure, du menu au service"
+      }
     ]
   },
   "tables": {
@@ -44,9 +64,25 @@
     "signature": "Signature",
     "price": "Sur devis",
     "items": [
-      { "num": "I", "name": "La Table française", "text": "Tradition et classiques revisités : terrines, volailles, sauces, pâtisserie. L'apéritif à la française, de la mise en bouche au digestif.", "chef": "Chef Kazu · cuisine française" },
-      { "num": "II", "name": "La Table japonaise", "text": "Le terroir japonais dans sa saison : poissons, légumes de Kyoto, dashi, fermentations. Des apéritifs revisités à la japonaise.", "chef": "Chef Yuichiro · cuisine japonaise" },
-      { "num": "III", "name": "À quatre mains", "text": "Nos deux chefs à la même table. Un menu fusion où chaque plat dialogue entre la France et le Japon — notre signature.", "chef": "Les deux chefs", "signature": true }
+      {
+        "num": "I",
+        "name": "La Table française",
+        "text": "Tradition et classiques revisités : terrines, volailles, sauces, pâtisserie. L'apéritif à la française, de la mise en bouche au digestif.",
+        "chef": "Chef Kazu · cuisine française"
+      },
+      {
+        "num": "II",
+        "name": "La Table japonaise",
+        "text": "Le terroir japonais dans sa saison : poissons, légumes de Kyoto, dashi, fermentations. Des apéritifs revisités à la japonaise.",
+        "chef": "Chef Yuichiro · cuisine japonaise"
+      },
+      {
+        "num": "III",
+        "name": "À quatre mains",
+        "text": "Nos deux chefs à la même table. Un menu fusion où chaque plat dialogue entre la France et le Japon — notre signature.",
+        "chef": "Les deux chefs",
+        "signature": true
+      }
     ]
   },
   "domicile": {
@@ -64,7 +100,16 @@
   "occasions": {
     "kicker": "Occasions",
     "title": "Les occasions qui comptent.",
-    "items": ["Anniversaires", "Fiançailles", "Mariages", "Noces", "Entreprises & séminaires", "Événements Voilà les enfants", "Apéritifs français ou revisités à la japonaise", "Chef privé à domicile"]
+    "items": [
+      "Anniversaires",
+      "Fiançailles",
+      "Mariages",
+      "Noces",
+      "Entreprises & séminaires",
+      "Événements Voilà les enfants",
+      "Apéritifs français ou revisités à la japonaise",
+      "Chef privé à domicile"
+    ]
   },
   "aperitif": {
     "kicker": "L'apéritif",
@@ -80,20 +125,44 @@
     "text": "Nous préférons une carte courte à une carte longue : des bouteilles et des produits que nous connaissons, du Japon comme de France, au rythme des saisons.",
     "img_alt": "Comté, chèvre, coupe de champagne, tasse de saké et bougeoir en laiton",
     "items": [
-      { "name": "Produits d'exception", "text": "Du terroir japonais et français, selon la saison." },
-      { "name": "Vins & spiritueux", "text": "Une carte restreinte, choisie bouteille par bouteille." },
-      { "name": "Fromages", "text": "De France et du Japon." },
-      { "name": "Charcuteries", "text": "Japonaises et européennes." }
+      {
+        "name": "Produits d'exception",
+        "text": "Du terroir japonais et français, selon la saison."
+      },
+      {
+        "name": "Vins & spiritueux",
+        "text": "Une carte restreinte, choisie bouteille par bouteille."
+      },
+      {
+        "name": "Fromages",
+        "text": "De France et du Japon."
+      },
+      {
+        "name": "Charcuteries",
+        "text": "Japonaises et européennes."
+      }
     ]
   },
   "chefs": {
     "kicker": "Les chefs",
     "title_1": "Deux cuisines,",
     "title_2": "une même exigence.",
-    "text": "Nous préférons vous montrer leurs assiettes plutôt que leurs visages.",
+    "text": "Deux parcours, une même table.",
     "items": [
-      { "cuisine": "Cuisine française", "name": "Kazu", "bio": "Formé à l'école de la cuisine française — les fonds, les sauces, les cuissons longues, la pâtisserie — Kazu la sert avec la précision et la retenue japonaises. Les classiques, sans ostentation ; le geste juste, à chaque assiette.", "img": "chef-kazu", "img_alt": "Suprême de volaille rôti, jus, petits légumes et purée — la cuisine de Kazu" },
-      { "cuisine": "Cuisine japonaise", "name": "Yuichiro", "bio": "Yuichiro cuisine le Japon dans sa saison : poissons du marché, légumes de Kyoto, dashi, fermentations. Une cuisine de l'essentiel, pensée pour la table et le partage plutôt que pour le comptoir.", "img": "chef-yuichiro", "img_alt": "Sashimi de saison sur céramique de Kyoto et bol de dashi — la cuisine de Yuichiro" }
+      {
+        "cuisine": "Cuisine française",
+        "name": "Kazu",
+        "bio": "Formé à l'école de la cuisine française — les fonds, les sauces, les cuissons longues, la pâtisserie — Kazu la sert avec la précision et la retenue japonaises. Les classiques, sans ostentation ; le geste juste, à chaque assiette.",
+        "img": "chef-kazu",
+        "img_alt": "Kazu dressant une assiette au comptoir — cuisine française"
+      },
+      {
+        "cuisine": "Cuisine japonaise",
+        "name": "Yuichiro",
+        "bio": "Yuichiro cuisine le Japon dans sa saison : poissons du marché, légumes de Kyoto, dashi, fermentations. Une cuisine de l'essentiel, pensée pour la table et le partage plutôt que pour le comptoir.",
+        "img": "chef-yuichiro",
+        "img_alt": "Yuichiro dressant des sashimis au comptoir — cuisine japonaise"
+      }
     ]
   },
   "destinations": {
@@ -101,7 +170,13 @@
     "title": "Depuis Kyoto, partout où l'on reçoit.",
     "text": "Installés au Japon, nous opérons dans tout le pays, ainsi qu'à Bali et en France.",
     "also": "Également reçus à",
-    "cities": ["Singapour", "Dubaï", "Hong Kong", "Bangkok", "Shanghai"]
+    "cities": [
+      "Singapour",
+      "Dubaï",
+      "Hong Kong",
+      "Bangkok",
+      "Shanghai"
+    ]
   },
   "demande_block": {
     "kicker": "Demande",
@@ -127,22 +202,54 @@
     "legend_you": "Vous",
     "optional": "(facultatif)",
     "occasion": "Occasion",
-    "occasions": ["Anniversaire", "Fiançailles", "Mariage", "Noces", "Entreprise · séminaire", "Événement Voilà les enfants", "Dîner entre amis · famille", "Autre"],
+    "occasions": [
+      "Anniversaire",
+      "Fiançailles",
+      "Mariage",
+      "Noces",
+      "Entreprise · séminaire",
+      "Événement Voilà les enfants",
+      "Dîner entre amis · famille",
+      "Autre"
+    ],
     "formule": "Formule",
-    "formules": ["Apéritif", "Dîner", "Apéritif + dîner", "Chef privé à domicile"],
-    "date": "Date souhaitée", "date_ph": "JJ / MM / AAAA",
-    "time": "Heure", "time_ph": "19:00",
-    "guests": "Nombre de convives", "guests_ph": "12",
-    "place": "Lieu", "place_ph": "Ville, pays — domicile ou salle",
+    "formules": [
+      "Apéritif",
+      "Dîner",
+      "Apéritif + dîner",
+      "Chef privé à domicile"
+    ],
+    "date": "Date souhaitée",
+    "date_ph": "JJ / MM / AAAA",
+    "time": "Heure",
+    "time_ph": "19:00",
+    "guests": "Nombre de convives",
+    "guests_ph": "12",
+    "place": "Lieu",
+    "place_ph": "Ville, pays — domicile ou salle",
     "table": "Table souhaitée",
-    "tables": ["À quatre mains — Kazu & Yuichiro", "La Table française — Kazu", "La Table japonaise — Yuichiro", "Je ne sais pas encore"],
-    "budget": "Budget indicatif", "budget_ph": "¥ par personne ou enveloppe globale",
-    "name": "Nom", "name_ph": "Prénom Nom",
+    "tables": [
+      "À quatre mains — Kazu & Yuichiro",
+      "La Table française — Kazu",
+      "La Table japonaise — Yuichiro",
+      "Je ne sais pas encore"
+    ],
+    "budget": "Budget indicatif",
+    "budget_ph": "¥ par personne ou enveloppe globale",
+    "name": "Nom",
+    "name_ph": "Prénom Nom",
     "language": "Langue préférée",
-    "languages": ["日本語", "English", "Français"],
-    "email": "E-mail", "email_ph": "vous@exemple.com",
-    "phone": "Téléphone", "phone_ph": "+81",
-    "message": "Votre événement en quelques mots", "message_ph": "Allergies, envies particulières, ambiance, contraintes du lieu…",
+    "languages": [
+      "日本語",
+      "English",
+      "Français"
+    ],
+    "email": "E-mail",
+    "email_ph": "vous@exemple.com",
+    "phone": "Téléphone",
+    "phone_ph": "+81",
+    "message": "Votre événement en quelques mots",
+    "message_ph": "Allergies, envies particulières, ambiance, contraintes du lieu…",
     "submit": "Envoyer la demande",
     "sending": "Envoi…",
     "note": "Vos informations ne servent qu'à préparer notre proposition. Aucun engagement avant le devis signé.",
@@ -152,9 +259,21 @@
     "error_cta": "Envoyer par e-mail",
     "how_kicker": "Comment cela se passe",
     "steps": [
-      { "num": "I", "name": "Votre demande", "text": "L'occasion, la date, le lieu, les convives. Nous vous rappelons pour affiner." },
-      { "num": "II", "name": "Notre proposition", "text": "Un menu composé pour vous, le chef ou les deux chefs, la carte des vins et le devis." },
-      { "num": "III", "name": "Votre table", "text": "Nous arrivons avec les produits, cuisinons, dressons et servons. Vous recevez." }
+      {
+        "num": "I",
+        "name": "Votre demande",
+        "text": "L'occasion, la date, le lieu, les convives. Nous vous rappelons pour affiner."
+      },
+      {
+        "num": "II",
+        "name": "Notre proposition",
+        "text": "Un menu composé pour vous, le chef ou les deux chefs, la carte des vins et le devis."
+      },
+      {
+        "num": "III",
+        "name": "Votre table",
+        "text": "Nous arrivons avec les produits, cuisinons, dressons et servons. Vous recevez."
+      }
     ],
     "direct": "Nous écrire directement",
     "zone": "Kyoto, Japon — nous opérons partout au Japon, à Bali et en France.",
@@ -164,11 +283,39 @@
     "kicker": "Informations",
     "title": "Mentions légales",
     "sections": [
-      { "h": "Éditeur du site", "p": ["Voilà chef — une maison Voilà.", "[À COMPLÉTER : raison sociale, forme juridique, adresse à Kyoto, numéro d'enregistrement.]", "Contact : contact-voilaJP@proton.me"] },
-      { "h": "Hébergement", "p": ["Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis."] },
-      { "h": "特定商取引法に基づく表記", "p": ["[À COMPLÉTER : 販売業者 / 運営責任者 / 所在地 / 電話番号 / 販売価格（見積による） / 支払方法 / キャンセル規定。]"] },
-      { "h": "Données personnelles", "p": ["Les informations transmises via le formulaire de demande servent uniquement à préparer notre proposition et à vous répondre. Elles ne sont ni vendues ni transmises à des tiers, et sont supprimées sur simple demande à l'adresse ci-dessus.", "Ce site n'utilise pas de cookies publicitaires. [Si GA4 est activé : mesure d'audience anonymisée Google Analytics 4.]"] },
-      { "h": "Crédits", "p": ["Photographies : Voilà chef. Typographies : Cormorant Garamond, Jost, Shippori Mincho, Zen Kaku Gothic New (Google Fonts)."] }
+      {
+        "h": "Éditeur du site",
+        "p": [
+          "Voilà chef — une maison Voilà.",
+          "[À COMPLÉTER : raison sociale, forme juridique, adresse à Kyoto, numéro d'enregistrement.]",
+          "Contact : contact-voilaJP@proton.me"
+        ]
+      },
+      {
+        "h": "Hébergement",
+        "p": [
+          "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis."
+        ]
+      },
+      {
+        "h": "特定商取引法に基づく表記",
+        "p": [
+          "[À COMPLÉTER : 販売業者 / 運営責任者 / 所在地 / 電話番号 / 販売価格（見積による） / 支払方法 / キャンセル規定。]"
+        ]
+      },
+      {
+        "h": "Données personnelles",
+        "p": [
+          "Les informations transmises via le formulaire de demande servent uniquement à préparer notre proposition et à vous répondre. Elles ne sont ni vendues ni transmises à des tiers, et sont supprimées sur simple demande à l'adresse ci-dessus.",
+          "Ce site n'utilise pas de cookies publicitaires. [Si GA4 est activé : mesure d'audience anonymisée Google Analytics 4.]"
+        ]
+      },
+      {
+        "h": "Crédits",
+        "p": [
+          "Photographies : Voilà chef. Typographies : Cormorant Garamond, Jost, Shippori Mincho, Zen Kaku Gothic New (Google Fonts)."
+        ]
+      }
     ]
   }
 }

@@ -2,7 +2,11 @@
   "lang": "en",
   "lang_label": "EN",
   "dir": "en",
-  "pages": { "index": "", "demande": "request", "legal": "legal" },
+  "pages": {
+    "index": "",
+    "demande": "request",
+    "legal": "legal"
+  },
   "meta": {
     "index_title": "Voilà chef — Private chefs in Kyoto · French, Japanese and four-hands dining",
     "index_desc": "Two chefs, two cuisines. Private dinners, apéritifs and chef-at-home for your occasions: birthdays, engagements, weddings, corporate events. Kyoto, Japan, Bali, France.",
@@ -12,9 +16,16 @@
     "legal_desc": "Legal notice, operator information and privacy policy of Voilà chef."
   },
   "nav": {
-    "chefs": "The chefs", "tables": "The tables", "occasions": "Occasions", "domicile": "At home",
-    "aperitif": "Apéritif", "cave": "Cellar", "destinations": "Destinations", "demande": "Enquire",
-    "menu_open": "Open menu", "menu_close": "Close menu"
+    "chefs": "The chefs",
+    "tables": "The tables",
+    "occasions": "Occasions",
+    "domicile": "At home",
+    "aperitif": "Apéritif",
+    "cave": "Cellar",
+    "destinations": "Destinations",
+    "demande": "Enquire",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu"
   },
   "hero": {
     "kicker": "Kyoto · Japan · Bali · France",
@@ -32,9 +43,18 @@
     "p1": "Voilà chef brings Kazu and Yuichiro together around one standard: exceptional produce, a short and certain list, and a taste for the occasions that matter.",
     "p2": "Every table is composed to measure — for a dinner among friends, a family celebration, a wedding or a corporate retreat. French cuisine, Japanese cuisine, or both at the same table.",
     "stats": [
-      { "n": "02", "t": "chefs — one French kitchen, one Japanese kitchen" },
-      { "n": "03", "t": "tables — French, Japanese, four hands" },
-      { "n": "By quote", "t": "every event composed to measure, from the menu to the service" }
+      {
+        "n": "02",
+        "t": "chefs — one French kitchen, one Japanese kitchen"
+      },
+      {
+        "n": "03",
+        "t": "tables — French, Japanese, four hands"
+      },
+      {
+        "n": "By quote",
+        "t": "every event composed to measure, from the menu to the service"
+      }
     ]
   },
   "tables": {
@@ -44,9 +64,25 @@
     "signature": "Signature",
     "price": "By quote",
     "items": [
-      { "num": "I", "name": "The French Table", "text": "Tradition and classics, revisited: terrines, poultry, sauces, pastry. The French apéritif, from the first bite to the digestif.", "chef": "Chef Kazu · French cuisine" },
-      { "num": "II", "name": "The Japanese Table", "text": "The Japanese terroir in its season: fish, Kyoto vegetables, dashi, fermentations. Apéritifs reinterpreted the Japanese way.", "chef": "Chef Yuichiro · Japanese cuisine" },
-      { "num": "III", "name": "Four Hands", "text": "Both chefs at the same table. A fusion menu where every course is a conversation between France and Japan — our signature.", "chef": "Both chefs", "signature": true }
+      {
+        "num": "I",
+        "name": "The French Table",
+        "text": "Tradition and classics, revisited: terrines, poultry, sauces, pastry. The French apéritif, from the first bite to the digestif.",
+        "chef": "Chef Kazu · French cuisine"
+      },
+      {
+        "num": "II",
+        "name": "The Japanese Table",
+        "text": "The Japanese terroir in its season: fish, Kyoto vegetables, dashi, fermentations. Apéritifs reinterpreted the Japanese way.",
+        "chef": "Chef Yuichiro · Japanese cuisine"
+      },
+      {
+        "num": "III",
+        "name": "Four Hands",
+        "text": "Both chefs at the same table. A fusion menu where every course is a conversation between France and Japan — our signature.",
+        "chef": "Both chefs",
+        "signature": true
+      }
     ]
   },
   "domicile": {
@@ -64,7 +100,16 @@
   "occasions": {
     "kicker": "Occasions",
     "title": "The occasions that matter.",
-    "items": ["Birthdays", "Engagements", "Weddings", "Anniversaries", "Corporate & retreats", "Voilà les enfants events", "French or Japanese-style apéritifs", "Private chef at home"]
+    "items": [
+      "Birthdays",
+      "Engagements",
+      "Weddings",
+      "Anniversaries",
+      "Corporate & retreats",
+      "Voilà les enfants events",
+      "French or Japanese-style apéritifs",
+      "Private chef at home"
+    ]
   },
   "aperitif": {
     "kicker": "The apéritif",
@@ -80,20 +125,44 @@
     "text": "We prefer a short list to a long one: bottles and produce we know, from Japan and from France, following the seasons.",
     "img_alt": "Comté, goat cheese, coupe of Champagne, cup of sake and a brass candle holder",
     "items": [
-      { "name": "Exceptional produce", "text": "From the Japanese and French terroirs, in season." },
-      { "name": "Wines & spirits", "text": "A short list, chosen bottle by bottle." },
-      { "name": "Cheeses", "text": "From France and from Japan." },
-      { "name": "Charcuterie", "text": "Japanese and European." }
+      {
+        "name": "Exceptional produce",
+        "text": "From the Japanese and French terroirs, in season."
+      },
+      {
+        "name": "Wines & spirits",
+        "text": "A short list, chosen bottle by bottle."
+      },
+      {
+        "name": "Cheeses",
+        "text": "From France and from Japan."
+      },
+      {
+        "name": "Charcuterie",
+        "text": "Japanese and European."
+      }
     ]
   },
   "chefs": {
     "kicker": "The chefs",
     "title_1": "Two cuisines,",
     "title_2": "one standard.",
-    "text": "We would rather show you their plates than their faces.",
+    "text": "Two paths, one table.",
     "items": [
-      { "cuisine": "French cuisine", "name": "Kazu", "bio": "Trained in the French school — stocks, sauces, slow cooking, pastry — Kazu serves it with Japanese precision and restraint. The classics, without ostentation; the right gesture, on every plate.", "img": "chef-kazu", "img_alt": "Roast chicken supreme, jus, baby vegetables and purée — Kazu's cooking" },
-      { "cuisine": "Japanese cuisine", "name": "Yuichiro", "bio": "Yuichiro cooks Japan in its season: fish from the market, Kyoto vegetables, dashi, fermentations. A cuisine of the essential, made for the table and for sharing rather than for the counter.", "img": "chef-yuichiro", "img_alt": "Seasonal sashimi on Kyoto ceramics with a bowl of dashi — Yuichiro's cooking" }
+      {
+        "cuisine": "French cuisine",
+        "name": "Kazu",
+        "bio": "Trained in the French school — stocks, sauces, slow cooking, pastry — Kazu serves it with Japanese precision and restraint. The classics, without ostentation; the right gesture, on every plate.",
+        "img": "chef-kazu",
+        "img_alt": "Kazu plating at the counter — French cuisine"
+      },
+      {
+        "cuisine": "Japanese cuisine",
+        "name": "Yuichiro",
+        "bio": "Yuichiro cooks Japan in its season: fish from the market, Kyoto vegetables, dashi, fermentations. A cuisine of the essential, made for the table and for sharing rather than for the counter.",
+        "img": "chef-yuichiro",
+        "img_alt": "Yuichiro plating sashimi at the counter — Japanese cuisine"
+      }
     ]
   },
   "destinations": {
@@ -101,7 +170,13 @@
     "title": "From Kyoto, wherever you host.",
     "text": "Based in Japan, we operate across the country, as well as in Bali and in France.",
     "also": "Also hosted in",
-    "cities": ["Singapore", "Dubai", "Hong Kong", "Bangkok", "Shanghai"]
+    "cities": [
+      "Singapore",
+      "Dubai",
+      "Hong Kong",
+      "Bangkok",
+      "Shanghai"
+    ]
   },
   "demande_block": {
     "kicker": "Enquire",
@@ -127,22 +202,54 @@
     "legend_you": "You",
     "optional": "(optional)",
     "occasion": "Occasion",
-    "occasions": ["Birthday", "Engagement", "Wedding", "Anniversary", "Corporate · retreat", "Voilà les enfants event", "Dinner with friends · family", "Other"],
+    "occasions": [
+      "Birthday",
+      "Engagement",
+      "Wedding",
+      "Anniversary",
+      "Corporate · retreat",
+      "Voilà les enfants event",
+      "Dinner with friends · family",
+      "Other"
+    ],
     "formule": "Format",
-    "formules": ["Apéritif", "Dinner", "Apéritif + dinner", "Private chef at home"],
-    "date": "Preferred date", "date_ph": "DD / MM / YYYY",
-    "time": "Time", "time_ph": "19:00",
-    "guests": "Number of guests", "guests_ph": "12",
-    "place": "Venue", "place_ph": "City, country — home or venue",
+    "formules": [
+      "Apéritif",
+      "Dinner",
+      "Apéritif + dinner",
+      "Private chef at home"
+    ],
+    "date": "Preferred date",
+    "date_ph": "DD / MM / YYYY",
+    "time": "Time",
+    "time_ph": "19:00",
+    "guests": "Number of guests",
+    "guests_ph": "12",
+    "place": "Venue",
+    "place_ph": "City, country — home or venue",
     "table": "Preferred table",
-    "tables": ["Four Hands — Kazu & Yuichiro", "The French Table — Kazu", "The Japanese Table — Yuichiro", "Not sure yet"],
-    "budget": "Indicative budget", "budget_ph": "¥ per person or overall",
-    "name": "Name", "name_ph": "First name Last name",
+    "tables": [
+      "Four Hands — Kazu & Yuichiro",
+      "The French Table — Kazu",
+      "The Japanese Table — Yuichiro",
+      "Not sure yet"
+    ],
+    "budget": "Indicative budget",
+    "budget_ph": "¥ per person or overall",
+    "name": "Name",
+    "name_ph": "First name Last name",
     "language": "Preferred language",
-    "languages": ["日本語", "English", "Français"],
-    "email": "E-mail", "email_ph": "you@example.com",
-    "phone": "Phone", "phone_ph": "+81",
-    "message": "Your event in a few words", "message_ph": "Allergies, particular wishes, mood, venue constraints…",
+    "languages": [
+      "日本語",
+      "English",
+      "Français"
+    ],
+    "email": "E-mail",
+    "email_ph": "you@example.com",
+    "phone": "Phone",
+    "phone_ph": "+81",
+    "message": "Your event in a few words",
+    "message_ph": "Allergies, particular wishes, mood, venue constraints…",
     "submit": "Send the enquiry",
     "sending": "Sending…",
     "note": "Your details are used only to prepare our proposal. No commitment before the signed quote.",
@@ -152,9 +259,21 @@
     "error_cta": "Send by e-mail",
     "how_kicker": "How it works",
     "steps": [
-      { "num": "I", "name": "Your enquiry", "text": "The occasion, the date, the venue, the guests. We call you back to refine." },
-      { "num": "II", "name": "Our proposal", "text": "A menu composed for you, the chef or both chefs, the wine list and the quote." },
-      { "num": "III", "name": "Your table", "text": "We arrive with the produce, cook, set and serve. You host." }
+      {
+        "num": "I",
+        "name": "Your enquiry",
+        "text": "The occasion, the date, the venue, the guests. We call you back to refine."
+      },
+      {
+        "num": "II",
+        "name": "Our proposal",
+        "text": "A menu composed for you, the chef or both chefs, the wine list and the quote."
+      },
+      {
+        "num": "III",
+        "name": "Your table",
+        "text": "We arrive with the produce, cook, set and serve. You host."
+      }
     ],
     "direct": "Write to us directly",
     "zone": "Kyoto, Japan — we operate anywhere in Japan, in Bali and in France.",
@@ -164,11 +283,39 @@
     "kicker": "Information",
     "title": "Legal notice",
     "sections": [
-      { "h": "Site operator", "p": ["Voilà chef — a Voilà house.", "[TO COMPLETE: company name, legal form, address in Kyoto, registration number.]", "Contact: contact-voilaJP@proton.me"] },
-      { "h": "Hosting", "p": ["Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA."] },
-      { "h": "特定商取引法に基づく表記", "p": ["[TO COMPLETE: 販売業者 / 運営責任者 / 所在地 / 電話番号 / 販売価格（見積による） / 支払方法 / キャンセル規定。]"] },
-      { "h": "Personal data", "p": ["Information sent through the enquiry form is used only to prepare our proposal and to reply to you. It is neither sold nor shared with third parties, and is deleted on request at the address above.", "This site uses no advertising cookies. [If GA4 is enabled: anonymised audience measurement with Google Analytics 4.]"] },
-      { "h": "Credits", "p": ["Photography: Voilà chef. Typefaces: Cormorant Garamond, Jost, Shippori Mincho, Zen Kaku Gothic New (Google Fonts)."] }
+      {
+        "h": "Site operator",
+        "p": [
+          "Voilà chef — a Voilà house.",
+          "[TO COMPLETE: company name, legal form, address in Kyoto, registration number.]",
+          "Contact: contact-voilaJP@proton.me"
+        ]
+      },
+      {
+        "h": "Hosting",
+        "p": [
+          "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA."
+        ]
+      },
+      {
+        "h": "特定商取引法に基づく表記",
+        "p": [
+          "[TO COMPLETE: 販売業者 / 運営責任者 / 所在地 / 電話番号 / 販売価格（見積による） / 支払方法 / キャンセル規定。]"
+        ]
+      },
+      {
+        "h": "Personal data",
+        "p": [
+          "Information sent through the enquiry form is used only to prepare our proposal and to reply to you. It is neither sold nor shared with third parties, and is deleted on request at the address above.",
+          "This site uses no advertising cookies. [If GA4 is enabled: anonymised audience measurement with Google Analytics 4.]"
+        ]
+      },
+      {
+        "h": "Credits",
+        "p": [
+          "Photography: Voilà chef. Typefaces: Cormorant Garamond, Jost, Shippori Mincho, Zen Kaku Gothic New (Google Fonts)."
+        ]
+      }
     ]
   }
 }
